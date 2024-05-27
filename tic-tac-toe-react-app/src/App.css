@@ -1,3 +1,7 @@
+.game {
+  display: flex;
+}
+
 .board {
   display: flex;
   flex-direction: column;
@@ -17,4 +21,28 @@
   line-height: 50px;
   background-color: white;
   border: 1px solid  rgb(46, 46, 46);
+  transition-property: background-color;
+  transition-duration: 400ms;
+}
+
+.square:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+li::marker {
+  color: white;
+}
+
+li button {
+  border-radius: 20px;
+  transition-property: background-color;
+  transition-duration: 400ms;
+  border: none;
+}
+
+li button:hover {
+  cursor: pointer;
+  background-color: orange;
+  
 }
